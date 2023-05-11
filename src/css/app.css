@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+
+html, 
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+body{
+}
+
+:root{
+    --color-primary: #0072fb;
+    --color-footer: #c0c0c0;
+    --border-color: #07f;
+    --link: #0099FF;
+}
+
+.wrapper{
+    position: relative;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.-padded{
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+
+.-margin{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.-text-center {
+    text-align: center;
+}
+
+.heading.-ultra,
+.text.-ultra,
+.link.-ultra{
+    font-weight: 900;
+}
+
+.heading.-h2 {
+    font-size: 16px;
+}
+
+.text{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.heading{
+    display: block;
+    margin: 0 0 0.25em 0;
+    line-height: 1.1;
+    letter-spacing: .01em;
+}
+strong{
+    font-weight: bold;
+}
+
+.sub {
+    display: block;
+    font-size: 14px;
+    color: #999;
+}
+
+@media only screen and(min-width:1024px){
+    .wrapper.-padded{
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+
+}
+
+
+
+#root{
+    background-image: var(--image);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+#RootStan{
+    border: 5px red solid;
+}
+
+
+  

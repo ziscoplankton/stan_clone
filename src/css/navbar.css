@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+#StanNavbar {
+    position: fixed;
+    min-width: 100vw;
+    z-index: 10;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat';
+    padding: 14px 7px;
+    transition: all .3s ease-in-out;
+}
+#StanNavbar.onScroll{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+#navbarLogo {
+    color: #FFF;
+    font-size: 2rem;
+    flex-grow: 1;
+    display: flex;
+}
+
+#StanLogo {
+    background-image: var(--stanBg);
+    width: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+    font-size: .8rem;
+}
+#StanLogoDetails {
+    font-size: .6rem;
+    text-transform:uppercase;
+    display: flex;
+    align-items:flex-end;
+    width: 100%;
+    font-weight: 300;
+}
+
+
+#navbarDetails{
+    color: #fff;
+    display: flex;
+    flex-grow: 1;
+}
+
+#navbarLogin{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+#navbarLogin:hover{
+    color:#09f;
+}
+
+#navbarCTA{
+    display: none;
+}
+
+@media(min-width:40rem){
+
+    #StanNavbar{
+        width: 97%;
+        position: fixed;
+        gap: 6rem;
+    }
+    #navbarLogo{
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        align-items: center;
+    }
+    #StanLogo{
+        width: 20%;
+        height: 100%;
+    }
+    #StanLogoDetails{
+        width: fit-content;
+    }
+    #navbarDetails{
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+    }
+    #navbarLogin{
+        width: initial;
+    }
+    #navbarCTA{
+        display: block;
+        background-color: var(--color-primary);
+        padding: 0.5rem;
+    }
+    #navbarCTA:hover{
+        border-color: #0065a8;
+        background-color: #1980fb;
+        cursor: pointer;
+    }
+}
