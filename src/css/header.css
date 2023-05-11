@@ -213,3 +213,9 @@
     min-height: 200px;
   }
 }
+
+@media(max-width:400px){
+  .image::after{
+    display: none;
+  }
+}
